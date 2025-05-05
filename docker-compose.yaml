@@ -10,6 +10,7 @@ services:
             RABBITMQ_DEFAULT_PASS: rabbitmq
         volumes:
             - algasensors-rabbitmq:/var/lib/rabbitmq/
+            - /configs/rabbitmq/enable_plugins:/etc/rabbitmq/enabled_plugins
 volumes:
     algasensors-rabbitmq:
         
